@@ -15,37 +15,37 @@ public class Logger {
      *
      * @param loggerState
      */
-    public static void setDebugLog(LoggerState loggerState) {
+    public static void setLogLevel(LoggerState loggerState) {
         mLevel = loggerState.value();
     }
 
-    public static void i(String TAG, String content) {
+    public static void i(String tag, String content) {
         if (LoggerState.LEVEL_I_SHOW.value() > mLevel) {
-            Log.i(TAG, content == null ? "" : content);
+            Log.i(tag, content == null ? "" : content);
         }
     }
 
-    public static void v(String TAG, String content) {
+    public static void v(String tag, String content) {
         if (LoggerState.LEVEL_V_SHOW.value() > mLevel) {
-            Log.v(TAG, content == null ? "" : content);
+            Log.v(tag, content == null ? "" : content);
         }
     }
 
-    public static void d(String TAG, String content) {
+    public static void d(String tag, String content) {
         if (LoggerState.LEVEL_D_SHOW.value() > mLevel) {
-            Log.d(TAG, content == null ? "" : content);
+            Log.d(tag, content == null ? "" : content);
         }
     }
 
-    public static void e(String TAG, String content) {
+    public static void e(String tag, String content) {
         if (LoggerState.LEVEL_E_SHOW.value() > mLevel) {
-            Log.e(TAG, content == null ? "" : content);
+            Log.e(tag, content == null ? "" : content);
         }
     }
 
-    public static void w(String TAG, String content) {
+    public static void w(String tag, String content) {
         if (LoggerState.LEVEL_NO_SHOW.value() > mLevel) {
-            Log.w(TAG, content == null ? "" : content);
+            Log.w(tag, content == null ? "" : content);
         }
     }
 

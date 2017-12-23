@@ -5,9 +5,11 @@ Android中BaseLog工具
 /**
 * 设置调试Log是否显示和显示级别
 *<p>
-*建议放到Application中去设置
-*</>
-* @param loggerState
+*建议放到Application中去设置。
+*<p>
+*如果没有设置，默认是全部显示。
+*</p>
+* @param loggerState Log级别
 */
 Logger.setDebugLog(LoggerState loggerState);
 /**
