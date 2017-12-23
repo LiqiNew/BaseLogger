@@ -14,7 +14,7 @@ allprojects {
 }
 ```
 
-**2：依赖HandlerFrame框架**<br>
+**2：依赖BaseLog工具**<br>
 
 ```gradle
 compile 'com.github.liqinew:baselogger:V.1.0.0'
