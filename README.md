@@ -1,6 +1,25 @@
+[![](https://jitpack.io/v/liqinew/baselogger.svg)](https://jitpack.io/#liqinew/baselogger)
+[![](https://img.shields.io/badge/%E4%BD%9C%E8%80%85-%E6%9D%8E%E5%A5%87-orange.svg)](https://github.com/LiqiNew)
 # BaseLogger
 Android中BaseLog工具
-### 使用方法
+#### Gradle远程依赖
+**1：在项目根目录build.gradley**	<br>
+
+```gradle
+allprojects {
+　　repositories {
+  　　//依赖仓库
+　　　maven { url 'https://jitpack.io' }
+　　}
+}
+```
+
+**2：依赖HandlerFrame框架**<br>
+
+```gradle
+compile 'com.github.liqinew:baselogger:V.1.0.0'
+```
+### 代码使用方法
 ```java 
 /**
 * 设置调试Log是否显示和显示级别
